@@ -1,0 +1,11 @@
+<div id="menu">
+  <ul id="left-menu" class="top-menu">
+    <li *ngFor="let lmenu of leftMenu" routerLink="/about">{{lmenu}}</li>
+  </ul>
+  <div id="logo-container">
+    <img src="../../../assets/logo.png" alt="logo" id="logo" routerLink="/home">
+  </div>
+  <ul id="right-menu" class="top-menu">
+    <li *ngFor="let rmenu of rightMenu" routerLink="/docs">{{rmenu}}</li>
+  </ul>
+</div>

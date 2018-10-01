@@ -1,0 +1,8 @@
+<div id="docs-info-container">
+  <app-information-container [title]=dataService.docsTitle [content]=dataService.docsInformation></app-information-container>
+</div>
+<div id="docs-menu-container">
+  <app-docs-menu *ngIf="dataService.docsMenu">
+  </app-docs-menu>
+</div>
+

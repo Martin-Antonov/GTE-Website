@@ -1,0 +1,10 @@
+<ul id="docs-menu-list">
+  <li *ngFor="let item of docsMenu" >
+    {{item.key | uppercase}}
+    <ul id="menu-sublist">
+      <li *ngFor="let submenu of item.subMenus">
+        {{submenu.class}}
+      </li>
+    </ul>
+  </li>
+</ul>

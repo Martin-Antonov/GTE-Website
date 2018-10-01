@@ -1,0 +1,36 @@
+@import "../../../shared/mixins";
+@import "../../../shared/constants";
+
+:host{
+  position:relative;
+  width:100%;
+  height:100%;
+  @include removeSelection;
+  #docs-menu-list{
+    padding-top:10%;
+    list-style: none;
+    li{
+      color:white;
+      font-family:$OPEN_SANS;
+      font-size:1.8vw;
+      &:hover{
+        color: #c1c1c1;
+        cursor:pointer;
+      }
+      #menu-sublist{
+        padding-left:20px;
+        list-style: none;
+        color:white;
+        li{
+          color:white;
+          font-family:$OPEN_SANS;
+          font-size:1.5vw;
+          &:hover{
+            color:#c1c1c1;
+            cursor:pointer;
+          }
+        }
+      }
+    }
+  }
+}

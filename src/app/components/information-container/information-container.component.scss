@@ -1,0 +1,40 @@
+@import "../../shared/mixins";
+@import "../../shared/constants";
+
+:host{
+  position:relative;
+  width:100%;
+  #information-title{
+    position:relative;
+
+    color:white;
+    font-size:2vw;
+    text-align:center;
+    font-family:$OPEN_SANS;
+    margin-bottom:20px;
+  }
+  #information-list{
+    color:white;
+    list-style:none;
+    li{
+      font-family: $LATO;
+      color:white;
+      /deep/ a{
+        text-decoration: none;
+        color: dodgerblue;
+      }
+    }
+  }
+  #information-text{
+    position:relative;
+    text-align:justify;
+    font-size: 0.9vw;
+    color:white;
+    font-family:$LATO;
+    /deep/ a{
+      text-decoration: none;
+      color: dodgerblue;
+    }
+  }
+}
+

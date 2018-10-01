@@ -1,0 +1,24 @@
+@import "../../shared/mixins";
+@import "../../shared/constants";
+
+:host{
+  position:absolute;
+  top:$NAV_BAR_HEIGHT;
+  width:100%;
+  height:100%;
+
+  #docs-info-container{
+    position:relative;
+    padding-top:5%;
+    @include center(true,false);
+    width:40%;
+    height:auto;
+  }
+  #docs-menu-container{
+    position:absolute;
+    top:5%;
+    left:5%;
+    width:30%;
+    height:100%;
+  }
+}

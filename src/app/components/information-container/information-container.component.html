@@ -1,0 +1,10 @@
+<h1 id="information-title">
+  {{title}}
+</h1>
+<p id="information-text" *ngIf="checkIsContentText(content) && content" [innerHTML]=content></p>
+<ul *ngIf="!checkIsContentText(content) && content" id="information-list">
+  <li *ngFor="let item of content" [innerHTML]="item.text">
+  </li>
+</ul>
+
+

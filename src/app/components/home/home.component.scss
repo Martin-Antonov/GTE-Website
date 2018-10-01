@@ -1,0 +1,81 @@
+@import "../../shared/mixins";
+@import "../../shared/constants";
+
+:host {
+  position: absolute;
+  top: $NAV_BAR_HEIGHT;
+  @include center(true, false);
+  width: 70%;
+  height: calc(100% - #{$NAV_BAR_HEIGHT});
+
+  #info-container {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 35%;
+    height: 60%
+  }
+
+  #video-container {
+    @include removeSelection;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 55%;
+    height: 60%;
+
+    video {
+      position: absolute;
+      padding-left: 5%;
+      width: 90%;
+      height: 90%;
+    }
+  }
+
+  #line-separator {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30%;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    background: -webkit-linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+    background: -moz-linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+    background: -ms-linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+    background: -o-linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+    background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+    @include removeSelection;
+  }
+
+  #start-button-container {
+    position: absolute;
+    height: 10%;
+    width: 20%;
+    @include removeSelection;
+    @include center(true, false);
+    bottom: 15%;
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, #ff0000, #b80000);
+    @include boxShadow(0, 6px, #490000);
+
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient(to bottom right, #d70000, #900000);
+      @include boxShadow(0, 6px, #490000);
+    }
+    &:active {
+      background: linear-gradient(to bottom right, #af0000, #460000);
+      @include boxShadow(0, 6px, #490000);
+    }
+    #start-button-text {
+      position: absolute;
+      @include center(true, true);
+      color: white;
+      font-family:$OPEN_SANS;
+      font-weight: 900;
+      font-size: 2vw;
+      white-space: nowrap;
+    }
+  }
+}

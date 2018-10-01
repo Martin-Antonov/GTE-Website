@@ -1,0 +1,196 @@
+{
+  "homeTitle": "WELCOME TO GTE",
+  "homeInformation": "Welcome to the homepage for Game Theory Explorer β, which is a software tool to create and analyze games as models of strategic interaction. An extensive or strategic-form game can be created and nicely displayed with a graphical user interface in a web browser. State-of-the-art algorithms then compute one or all Nash equilibria of the game.<br> Note that this is a β (“beta”) software version still under development, so please be patient with misbehaviour and bugs.",
+  "homeVideoURL": "https://www.youtube.com/embed/kurQfjPXfic?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=kurQfjPXfic",
+  "homeStartButtonText": "START GTE",
+  "docsTitle": "DOCUMENTATION",
+  "docsInformation": "Instead of using Flash, GTE has been completely rewritten with <a href='https://phaser.io/'>Phaser</a> - a 2D game engine. The current version of Phaser is 2.6.2, but can be updated to 3.x in the near future. <br> The software incorporates the MVC architecture and thus the documentation on the left follows this guideline. <br> The <a href='https://github.com/Martin-Antonov'>official repository </a> of GTE includes the GTE software, this website and the backend. <br> The website is written with Angular 5 and the backend service with Django.<br><br> Please, note that since the software is not completed, this documentation is under development.",
+  "aboutGTETitle": "GTE AND GAMBIT",
+  "aboutGTEInformation": "Gambit is the premier software project for quantitative analysis in game theory. The project has a 22-year history of providing open-source tools for students, researchers, and practitioners who use game theory in economics, computer science, political science, and other fields. This academic project is led by professors Theodore Turocy, Rahul Savani, and Bernhard von Stengel.<br>The original 2011 design objective was to provide a browser front-end to the Gambit software suite of game theory algorithms, which we called GTE for “Game Theory Explorer”. The browser interface makes it user-friendly and avoids installation hassle. That decision was spot-on: As we saw at the 2014 GSoC Reunion, half of the 2014 GSoC projects worked on similar browser front ends as part of their projects.<br>Main problem: our GUI is implemented in Flash which is now discontinued. In addition, the Flash development environment is hard to get installed, has version issues, and provided an increasing barrier to entry for prospective contributors. On the other hand, the GUI itself is much easier to understand than the back-end mathematical algorithms. The GUI projects have been the most successful GSoC student projects (in addition to those that implemented a lot of new Gambit functionality in Python).<br>In 2015, we therefore started on a re-design of GTE in HTML5 and JavaScript. The technical prerequisites are only a browser (with Firebug to debug the JavaScript code) so a student can contribute almost immediately.",
+  "aboutContributorsTitle": "CONTRIBUTORS",
+  "aboutContributorsInformation": [
+    {
+      "text": "Mark Egesdal"
+    },
+    {
+      "text": "Alfonso Gomez-Jordana"
+    },
+    {
+      "text": "Christion Pelissier"
+    },
+    {
+      "text": "Martin Prause"
+    },
+    {
+      "text": "Martin Antonov"
+    },
+    {
+      "text": "<a href='http://www.maths.lse.ac.uk/personal/stengel/'>Prof Bernhard von Stengel</a>"
+    },
+    {
+      "text": "<a href='http://cgi.csc.liv.ac.uk/~rahul/'>Dr Rahul Savani</a>"
+    }
+  ],
+  "aboutPublicationsTitle": "PUBLICATIONS",
+  "aboutPublicationsInformation": [
+    {
+      "text": "Rahul Savani and Bernhard von Stengel (2015), <a href='http://www.maths.lse.ac.uk/personal/stengel/TEXTE/largeongte.pdf'>Game Theory Explorer – Software for the Applied Game Theorist </a>. <em>Computational Management Science 12, 5-33.</em>"
+    }
+  ],
+  "docsMenu": [
+    {
+      "key": "Model",
+      "subMenus": [
+        {
+          "class": "Tree.ts",
+          "description": "some generic description",
+          "methods": [
+            {
+              "methodName": "Name1",
+              "params": [
+                {"name":"param 1", "type":"type 1", "description":"description 1"},
+                {"name":"param 2", "type":"type 2", "description":"description 2"},
+                {"name":"param 3", "type":"type 3", "description":"description 3"},
+                {"name":"param 4", "type":"type 4", "description":"description 4"}
+              ],
+              "properties": [
+                {"name":"property 1", "type":"type 1", "description":"description 1"},
+                {"name":"property 2", "type":"type 2", "description":"description 2"},
+                {"name":"property 3", "type":"type 3", "description":"description 3"},
+                {"name":"property 4", "type":"type 4", "description":"description 4"}
+              ]
+            },
+            {
+              "methodName": "Name2",
+              "params": [
+                {"name":"param 1", "type":"type 1", "description":"description 1"},
+                {"name":"param 2", "type":"type 2", "description":"description 2"},
+                {"name":"param 3", "type":"type 3", "description":"description 3"},
+                {"name":"param 4", "type":"type 4", "description":"description 4"}
+              ],
+              "properties": [
+                {"name":"property 1", "type":"type 1", "description":"description 1"},
+                {"name":"property 2", "type":"type 2", "description":"description 2"},
+                {"name":"property 3", "type":"type 3", "description":"description 3"},
+                {"name":"property 4", "type":"type 4", "description":"description 4"}
+              ]
+            }
+          ]
+        },
+        {
+          "class": "Node.ts",
+          "description": "some generic description",
+          "methods": [
+            {
+              "methodName": "Name1",
+              "params": [
+                {"name":"param 1", "type":"type 1", "description":"description 1"},
+                {"name":"param 2", "type":"type 2", "description":"description 2"},
+                {"name":"param 3", "type":"type 3", "description":"description 3"},
+                {"name":"param 4", "type":"type 4", "description":"description 4"}
+              ],
+              "properties": [
+                {"name":"property 1", "type":"type 1", "description":"description 1"},
+                {"name":"property 2", "type":"type 2", "description":"description 2"},
+                {"name":"property 3", "type":"type 3", "description":"description 3"},
+                {"name":"property 4", "type":"type 4", "description":"description 4"}
+              ]
+            },
+            {
+              "methodName": "Name2",
+              "params": [
+                {"name":"param 1", "type":"type 1", "description":"description 1"},
+                {"name":"param 2", "type":"type 2", "description":"description 2"},
+                {"name":"param 3", "type":"type 3", "description":"description 3"},
+                {"name":"param 4", "type":"type 4", "description":"description 4"}
+              ],
+              "properties": [
+                {"name":"property 1", "type":"type 1", "description":"description 1"},
+                {"name":"property 2", "type":"type 2", "description":"description 2"},
+                {"name":"property 3", "type":"type 3", "description":"description 3"},
+                {"name":"property 4", "type":"type 4", "description":"description 4"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "View",
+      "subMenus": [
+        {
+          "class": "TreeView.ts",
+          "description": "some generic description",
+          "methods": [
+            {
+              "methodName": "Name1",
+              "params": [
+                {"name":"param 1", "type":"type 1", "description":"description 1"},
+                {"name":"param 2", "type":"type 2", "description":"description 2"},
+                {"name":"param 3", "type":"type 3", "description":"description 3"},
+                {"name":"param 4", "type":"type 4", "description":"description 4"}
+              ],
+              "properties": [
+                {"name":"property 1", "type":"type 1", "description":"description 1"},
+                {"name":"property 2", "type":"type 2", "description":"description 2"},
+                {"name":"property 3", "type":"type 3", "description":"description 3"},
+                {"name":"property 4", "type":"type 4", "description":"description 4"}
+              ]
+            },
+            {
+              "methodName": "Name2",
+              "params": [
+                {"name":"param 1", "type":"type 1", "description":"description 1"},
+                {"name":"param 2", "type":"type 2", "description":"description 2"},
+                {"name":"param 3", "type":"type 3", "description":"description 3"},
+                {"name":"param 4", "type":"type 4", "description":"description 4"}
+              ],
+              "properties": [
+                {"name":"property 1", "type":"type 1", "description":"description 1"},
+                {"name":"property 2", "type":"type 2", "description":"description 2"},
+                {"name":"property 3", "type":"type 3", "description":"description 3"},
+                {"name":"property 4", "type":"type 4", "description":"description 4"}
+              ]
+            }
+          ]
+        },
+        {
+          "class": "NodeView.ts",
+          "description": "some generic description",
+          "methods": [
+            {
+              "methodName": "Name1",
+              "params": [
+                {"name":"param 1", "type":"type 1", "description":"description 1"},
+                {"name":"param 2", "type":"type 2", "description":"description 2"},
+                {"name":"param 3", "type":"type 3", "description":"description 3"},
+                {"name":"param 4", "type":"type 4", "description":"description 4"}
+              ],
+              "properties": [
+                {"name":"property 1", "type":"type 1", "description":"description 1"},
+                {"name":"property 2", "type":"type 2", "description":"description 2"},
+                {"name":"property 3", "type":"type 3", "description":"description 3"},
+                {"name":"property 4", "type":"type 4", "description":"description 4"}
+              ]
+            },
+            {
+              "methodName": "Name2",
+              "params": [
+                {"name":"param 1", "type":"type 1", "description":"description 1"},
+                {"name":"param 2", "type":"type 2", "description":"description 2"},
+                {"name":"param 3", "type":"type 3", "description":"description 3"},
+                {"name":"param 4", "type":"type 4", "description":"description 4"}
+              ],
+              "properties": [
+                {"name":"property 1", "type":"type 1", "description":"description 1"},
+                {"name":"property 2", "type":"type 2", "description":"description 2"},
+                {"name":"property 3", "type":"type 3", "description":"description 3"},
+                {"name":"property 4", "type":"type 4", "description":"description 4"}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

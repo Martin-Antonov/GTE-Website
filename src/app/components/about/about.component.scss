@@ -1,0 +1,30 @@
+@import "../../shared/mixins";
+@import "../../shared/constants";
+
+:host {
+  position: absolute;
+  top: $NAV_BAR_HEIGHT;
+  @include center(true, false);
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  #gambit-container {
+    position: relative;
+    padding-top:5%;
+    padding-bottom:5%;
+    @include center(true, false);
+    width: 100%;
+  }
+
+    #publications-container {
+      position: relative;
+      width: 50%;
+      float: left;
+    }
+    #contributors-container {
+      position: relative;
+      width: 50%;
+      float: right;
+    }
+  }
+
