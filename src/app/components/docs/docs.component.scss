@@ -1,24 +1,99 @@
 @import "../../shared/mixins";
 @import "../../shared/constants";
 
-:host{
-  position:absolute;
-  top:$NAV_BAR_HEIGHT;
-  width:100%;
-  height:100%;
+:host {
+  position: absolute;
+  top: $NAV_BAR_HEIGHT;
+  width: 100%;
+  height: 100%;
 
-  #docs-info-container{
-    position:relative;
-    padding-top:5%;
-    @include center(true,false);
-    width:40%;
-    height:auto;
+  #docs-info-container {
+    position: relative;
+    padding-top: 5%;
+    @include center(true, false);
+    width: 45%;
+    color: white;
+    height: auto;
+    h1, h2, h3, h4 {
+      font-family: $OPEN_SANS;
+    }
+    h1 {
+      font-size: 2vw;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.7vw;
+      color: $L_GREY1;
+      padding-left: 20px;
+    }
+    h3 {
+      font-size: 1.5vw;
+      color: $L_GREY2;
+      padding-left: 40px;
+    }
+    h4 {
+      font-size: 1.2vw;
+      color: $L_GREY3;
+      padding-left: 60px;
+    }
+    p {
+      font-family: $LATO;
+      font-size: 1.2em;
+      text-align: justify;
+      span{
+        font-family: Consolas, monaco, monospace;
+        color:$L_GREY4;
+        font-weight:lighter;
+      }
+      a {
+        text-decoration: none;
+        color: dodgerblue;
+        &:hover{
+          color: #45b3ff;
+        }
+      }
+    }
+    ol{
+      font-family: $LATO;
+      font-size: 1.2em;
+      text-align: justify;
+      padding-left:30px;
+    }
   }
-  #docs-menu-container{
-    position:absolute;
-    top:5%;
-    left:5%;
-    width:30%;
-    height:100%;
+  #docs-menu-container {
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    width: 30%;
+    height: 100%;
+
+    ul{
+      list-style:none;
+      font-family:$LATO;
+      color:white;
+      li{
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        padding-bottom:10px;
+        &:hover{
+          color:$L_GREY2
+        }
+      }
+      .tabx1{
+        padding-left:15px;
+        font-size:1.4em;
+      }
+      .tabx2{
+        padding-left:30px;
+        font-size:1.2em;
+      }
+      .tabx3{
+        padding-left:45px;
+        font-size:1em;
+      }
+    }
   }
 }

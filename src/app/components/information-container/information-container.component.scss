@@ -34,6 +34,9 @@
     /deep/ a{
       text-decoration: none;
       color: dodgerblue;
+      &:hover{
+        color: #45b3ff;
+      }
     }
   }
 }

@@ -1,12 +1,13 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs/Observable";
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs/Observable';
 
 
 export const GTE_MOCK_DATA_URL = './assets/mock-data.json';
 export const GTE_DATA_URL = 'http://test.api.logos.bg/api/getinfo/getinfo';
 export const MAIN_URL = 'http://test.api.logos.bg/';
 export const APP_URL = 'http://test.logos.bg/gte;';
+
 // export const APP_URL = 'http://abv.bg';
 
 @Injectable()
@@ -18,7 +19,7 @@ export class DataService {
 
   docsTitle: string;
   docsInformation: string;
-  docsMenu:any;
+  docsMenu: any;
 
   aboutGTETitle: string;
   aboutGTEInformation: string;
@@ -31,10 +32,9 @@ export class DataService {
     this.getData()
       .subscribe(
         (data) => {
-          console.log(data);
           this.homeTitle = data.home_title;
           this.homeInformation = data.home_information;
-          this.homeVideoURL = MAIN_URL+data.home_video_file;
+          this.homeVideoURL = MAIN_URL + data.home_video_file;
 
           this.docsTitle = data.docs_title;
           this.docsInformation = data.docs_information;

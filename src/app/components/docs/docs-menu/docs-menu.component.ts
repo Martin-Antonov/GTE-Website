@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {DataService, MAIN_URL} from "../../../services/data.service";
-import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs/Observable";
+import {DataService, MAIN_URL} from '../../../services/data.service';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs/Observable';
 
 
 @Component({

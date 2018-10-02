@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {DataService} from "../../services/data.service";
+import {Component, OnInit} from '@angular/core';
+import {DataService} from '../../services/data.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -13,7 +13,7 @@ export class NavBarComponent implements OnInit {
   rightMenu: Array<string>;
 
   constructor() {
-    this.menus = ["ABOUT", "DOCS"];
+    this.menus = ['ABOUT', 'DOCS'];
     this.leftMenu = [];
     this.rightMenu = [];
     for (let i = 0; i < this.menus.length / 2; i++) {
@@ -23,7 +23,14 @@ export class NavBarComponent implements OnInit {
       this.rightMenu.push(this.menus[i]);
     }
   }
-  ngOnInit() {
-  }
 
+  ngOnInit() {
+    window.onscroll = () => {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById('header-menu').style.height = '5%';
+      } else {
+        document.getElementById('header-menu').style.height = '15%';
+      }
+    };
+  }
 }
