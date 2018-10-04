@@ -36,63 +36,77 @@
       color: $L_GREY3;
       padding-left: 60px;
     }
+    img {
+      position: relative;
+      width: 100%;
+      transition: 0.2s;
+      z-index: 100000;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .enlarged {
+      position: absolute;
+      transform: scale(1.5);
+      z-index: 100000;
+    }
     p {
       font-family: $LATO;
       font-size: 1.2em;
       text-align: justify;
-      span{
+      span {
         font-family: Consolas, monaco, monospace;
-        color:$L_GREY4;
-        font-weight:lighter;
+        color: $L_GREY4;
+        font-weight: lighter;
       }
       a {
         text-decoration: none;
         color: dodgerblue;
-        &:hover{
+        &:hover {
           color: #45b3ff;
         }
       }
     }
-    ol{
+    ol {
       font-family: $LATO;
       font-size: 1.2em;
       text-align: justify;
-      padding-left:30px;
+      padding-left: 30px;
     }
   }
   #docs-menu-container {
     position: fixed;
-    top: 20%;
-    left: 5%;
-    width: 30%;
-    height: 100%;
-
-    ul{
-      list-style:none;
-      font-family:$LATO;
-      color:white;
-      li{
+    top: 18%;
+    left: 3%;
+    width: 20%;
+    height: auto;
+    z-index: 1;
+    ul {
+      list-style: none;
+      font-family: $LATO;
+      color: white;
+      li {
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
         cursor: pointer;
-        padding-bottom:10px;
-        &:hover{
-          color:$L_GREY2
+        padding-bottom: 10px;
+        &:hover {
+          color: $L_GREY2
         }
       }
-      .tabx1{
-        padding-left:15px;
-        font-size:1.4em;
+      .tabx1 {
+        padding-left: 15px;
+        font-size: 1.4em;
       }
-      .tabx2{
-        padding-left:30px;
-        font-size:1.2em;
+      .tabx2 {
+        padding-left: 30px;
+        font-size: 1.2em;
       }
-      .tabx3{
-        padding-left:45px;
-        font-size:1em;
+      .tabx3 {
+        padding-left: 45px;
+        font-size: 1em;
       }
     }
   }
