@@ -90,14 +90,14 @@ for the first slot are {X, Y, Z} and {P, Q} for the
 second slot. The algorithm then proceeds to generate all
 possible combinations of moves for each slot. If an
 information set is not reachable due to an
-**own earlier move in the strategy,**
+**own earlier move in the strategy**,
 the corresponding slot is skipped and given
 a value of null, which is later replaced by a "\*" in the
 string representation of each strategy.
 
 ### Bernhard:
 I hope that the phrase I emphasized
-**own earlier move in the strategy,**
+**own earlier move in the strategy**
 has the conceptual mistake (in line with the observed bug)
 that "earlier" is interpreted in terms of the linear list of
 information sets, rather than the (more partial) order in
