@@ -245,4 +245,5 @@ architecture due performance optimizations.
 A detailed explanation on the MVC architecture, the various classes, the
 communication between classes and, in general, the implementation of
 Phaser GTE can be found in the dissertation project
-[here](./Dissertation68123.pdf).
+[here](./[here](https://drive.google.com/file/d/0B1qR_aQJgeLsbmhwNVIzcXE1MDQ/view),
+also file `Dissertation68123.pdf` in this repository.
