@@ -35,15 +35,14 @@ currently uses Phaser 2.x, which will be updated by the community in the
 future.
 
 In the dissertation, the Phaser core of the software was initially
-written with the [MVC design
-pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller).
+written with the
+[MVC design pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller).
 In the newer version, slight modifications were made and now the project
-strictly follows the [CLEAN
-architecture](https://android.jlelse.eu/thoughts-on-clean-architecture-b8449d9d02df),
+strictly follows the
+[CLEAN architecture](https://android.jlelse.eu/thoughts-on-clean-architecture-b8449d9d02df),
 while still preserving the Model, View and Controller separation. For a
 detailed overview of the Phaser core architecture, you can read the
-[dissertation
-project](https://drive.google.com/file/d/0B1qR_aQJgeLsbmhwNVIzcXE1MDQ/view).
+[dissertation project](https://drive.google.com/file/d/0B1qR_aQJgeLsbmhwNVIzcXE1MDQ/view).
 
 A Phaser course by the developer of GTE can be found
 [here](https://www.youtube.com/watch?v=TUxpZr2Ekpg&list=PLRsPe93DnzPOrVx111HHMW0w4tXe0zdLb),
@@ -58,13 +57,10 @@ version to version are minimal. Angular comes with a predefined
 architecture, which will be briefly discussed here. A good overview of
 this architecture can be seen in this
 [video](https://www.youtube.com/watch?v=svPlLuoTEaQ&t=55s),
-or in the [official
-documentation](https://angular.io/guide/architecture).
+or in the [official documentation](https://angular.io/guide/architecture).
 There are plenty of tutorials and examples written for Angular, but we
-recommend this 1 hour [introduction
-video](https://www.youtube.com/watch?v=z4JUm0Bq9AM) and
-this [tutorial
-series](https://www.youtube.com/watch?v=0eWrpsCLMJQ&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ).
+recommend this 1 hour [introduction video](https://www.youtube.com/watch?v=z4JUm0Bq9AM) and
+this [tutorial series](https://www.youtube.com/watch?v=0eWrpsCLMJQ&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ).
 There is also a written
 [tutorial](https://angular.io/tutorial) on angular.io, but
 it is slightly harder to follow and learn from. Angular has a bit of a
@@ -85,8 +81,7 @@ communicate with backend services to draw or operate on game trees. One
 exception is the solver, which resides in a separate django project. The
 django backend service is also responsible for this website.
 
-The developer's [github
-page](https://github.com/Martin-Antonov) includes the
+The developer's [github page](https://github.com/Martin-Antonov) includes the
 current GTE software, the dissertation version, this website and the
 backend service.
 
@@ -104,8 +99,8 @@ parts - game trees drawing (with Phaser) and UI (with Angular).
 
 #### COMMAND LINE INTERFACE 
 
-Angular comes with a [Command Line Interface
-(CLI)](https://cli.angular.io/) containing various
+Angular comes with a
+[Command Line Interface (CLI)](https://cli.angular.io/) containing various
 commands such as - creating a new project, serving a project, building a
 project, creating components, services and so on. You can create a new
 project with the 
@@ -117,14 +112,14 @@ a skeleton for development which includes all necessary configuration
 files and clear structure for the developer to follow.
 
 We should note that Angular uses many external libraries, which are
-listed in the [package.json] file. These
+listed in the `package.json` file. These
 external libraries are never included in a github repository - they
 should be installed with the command 
 
     npm install
 
 which looks at the dependencies from the
-[package.json] file. By typing the
+`package.json` file. By typing the
 command, npm creates a folder called `node_modules`.
 It includes all necessary external libraries for your
 project.
