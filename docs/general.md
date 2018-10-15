@@ -108,7 +108,10 @@ Angular comes with a [Command Line Interface
 (CLI)](https://cli.angular.io/) containing various
 commands such as - creating a new project, serving a project, building a
 project, creating components, services and so on. You can create a new
-project with the `ng new \[project-name\] \[options\]`
+project with the 
+
+    ng new [project-name] [options]
+
 command. Angular CLI creates
 a skeleton for development which includes all necessary configuration
 files and clear structure for the developer to follow.
