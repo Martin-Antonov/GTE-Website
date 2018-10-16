@@ -1,0 +1,6 @@
+convert  2sf.png                 -resize 250 2sf-.png
+convert  3sf-commas.png          -resize 400 3sf-commas-.png
+convert  3sf.png                 -resize 400 3sf-.png
+convert  3sf-stacked-compact.png -resize 250 3sf-stacked-compact-.png
+convert  3sf-stacked.png         -resize 250 3sf-stacked-.png
+convert  4sf.png                 -resize 400 4sf-.png
