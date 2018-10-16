@@ -13,9 +13,10 @@ which should be as predictable as possible:
     
     **ACTUALLY, I WONDER if that status should not be
     assigned to the tree edge rather than the info set.
-    See below, in particular 3.a and 9.**
+    See below, in particular 3.a. and 9.**
  
-2. For each player, store a "first unused move label" 
+2. For each player, store a "first unused move label" for
+   automatic consecutive numbering.
 
 3. When an information set is assigned a new player or chance,
    
@@ -44,9 +45,15 @@ which should be as predictable as possible:
    "assigned move" state. So no special status for
    "manually edited", just "assigned move".
 
+   * maybe allow for reversal back to "unassigned" when
+     entering a *blank* label (blank labels are currently
+     allowed which are not great)
+
 7. When two information sets are merged, use the move labels
    of the *first* information set that has "assigned move"
-   status. If there are none, leave all unassigned.
+   status, complete missing move names as in 5.
+   If all merged info sets have unassigned nodes, leave
+   them. 
 
 8. When an information set is split or dissolved, keep the
    current status and names for the two information sets
@@ -57,6 +64,8 @@ which should be as predictable as possible:
    "assigned move" status only because of that label. If so
    (all children of the parent node have unassigned moves
    leading to them), change parent info set to "unassigned".
+   **No such thing necessary if "unassigned" is a move
+   status.
 
 10. Reset button: make all moves unassigned. Create all
     labels anew if the check in 3.a. shows that all infosets
@@ -65,9 +74,10 @@ which should be as predictable as possible:
     Since we have undo, this strong effect can be undone and
     manual assignment used instead.
 
-### Preferred move lists
+### Possible feature: Preferred move lists
 
-This is not urgent at all. 
+This is not urgent at all and refers to an extension of 2.
+above.
 
 I think a later feature could be that rather than starting
 from A,B,C for player 1, and a,b,c for player 2
