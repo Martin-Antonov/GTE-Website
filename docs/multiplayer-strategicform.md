@@ -20,13 +20,13 @@ arranged horizontally because this keeps the height of the
 picture low.
 Moreover, the payoffs inside a cell are now staggered and
 the only natural order is 1,2,3.
-I line with the convention for 2 players we stagger the
+In line with the convention for 2 players we stagger the
 payoffs from bottom left to top right, with the center of
-each number placed on the diagonal.
+each number placed on the off-diagonal.
 Because the numbers have some width this also make good use
 of the quadratic shape of the cell.
 The meaning of the diagonal stacking follows from the
-colours, and is also indicated at the top left (useful?).
+colours, and is also indicated at the top left (clear? useful?).
 
 ![](./PICS/3sf-.png)
 
@@ -46,23 +46,36 @@ This takes less space on a vertically oriented screen.
 Perhaps later one could offer a choice between horizontal
 and vertical panels in the settings, or a suitable button.
 
+Both arrangements can be adapted to more than 2 strategies
+per player.
+
 ### 3 players with comma-separated payoffs, vertically stacked panels 
 
-The conventional way of writing payoffs (certainly easier to
+Compared to the staggered payoffs that we advocate,
+the conventional way of writing payoffs (certainly easier to
 typeset, which may be the main reason it is used) is to put
 them comma-separated in each cell. 
 This is rather natural for 3 players,
 but then a square shape of the cell would be a massive waste
 of vertical space. Hence, the cells will become rectangles
 that are typically much wider than high.
-The width could be adapted to the actually need depending
-the width of the payoff entries.
+The width could be adapted to the actually needed horizontal
+space depending on the width of the payoff entries
+(but should be uniform per column, with commas vertically lined up).
 
 The following example uses player colours for the payoffs,
 black for the commas, and an annotation (not clear it is
 needed) 1,2,3 at the top left.
 
 ![](./PICS/3sf-commas-.png)
+
+Feature / for discussion:
+In the above picture, the player to move is printed with a
+colon before the move name (not standard for the strategic
+form).
+If this is implemented, make the player name *separate*
+because it might have its own font.
+(Done above for players 1 and 2 but not player 3).
 
 ## 4 players
 
@@ -72,12 +85,6 @@ for player 3, big columns for player 4:
 
 ![](./PICS/4sf-.png)
 
-In the above picture, the player to move is printed with a
-colon before the move name (not standard for the strategic
-form).
-If this is implemented, make the player name *separate*
-because it might have its own font.
-(Done above for players 1 and 2 but not player 3).
 
 This 4-player scheme can also be adapted for comma-separation.
 
