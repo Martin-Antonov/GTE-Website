@@ -51,13 +51,14 @@ which should be as predictable as possible:
 
 7. When two information sets are merged, use the move labels
    of the *first* information set that has "assigned move"
-   status, complete missing move names as in 5.
-   If all merged info sets have unassigned nodes, leave
-   them. 
+   status (also probably useful: complete missing move names as in 5.).
+   If all merged info sets have unassigned moves, leave
+   them like this. 
 
 8. When an information set is split or dissolved, keep the
-   current status and names for the two information sets
-   (which now have the same move labels).
+   current status and names for the two or more newly
+   created information sets (which now have the same move
+   labels).
 
 9. When a leaf is deleted, check if the edge leading to it
    has a move label and if so if the parent node had
@@ -65,7 +66,7 @@ which should be as predictable as possible:
    (all children of the parent node have unassigned moves
    leading to them), change parent info set to "unassigned".
    **No such thing necessary if "unassigned" is a move
-   status.
+   status.**
 
 10. Reset button: make all moves unassigned. Create all
     labels anew if the check in 3.a. shows that all infosets
