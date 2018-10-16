@@ -30,6 +30,10 @@ colours, and is also indicated at the top left (clear? useful?).
 
 ![](./PICS/3sf-.png)
 
+Note: in the above picture, the actions of player 3 are
+written at the bottom. An alternative is at the top, as done
+for 4 players below.
+
 ### 3 players with vertically stacked panels chosen by player 3
 
 A second possibility is to stack the panels chosen by
