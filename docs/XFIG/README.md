@@ -12,7 +12,8 @@ Its text-based .fig format, documented in
 [`fig-format-2018`](./fig-format-2018) as 
 taken from http://mcj.sourceforge.net/fig-format.html,
 is compact, and allows reliable conversions to other formats
-such as .pdf or .svg with the `fig2dev` program.
+such as .pdf, .eps, or .svg with the `fig2dev` program or
+manually in xfig itself.
 Hence, if exported to .fig, we get the other formats by a
 call to `fig2dev` on a Linux backend server without any
 extra work.
@@ -168,16 +169,24 @@ The numbers 10, 20, etc. should be constants that can be
 changed in case they don't come out right.
 Nodes and information sets (and move labels if the writing
 is too large) should be in front of tree lines but the rest
-is typically not overlapping and hence irrelevant.
+is typically not overlapping and hence the depth is irrelevant.
 
 The point is that this allows quickly, via the depth, to
-identify *all* labels of player 1 and 2, for example, which
-are meant to get a different font size in xfig. 
-I then highlight only depths 41 and 42 and apply this change
-in seconds in the xfig GUI.
+identify, for example, *all* player labels of player 1 and 2
+which are meant to get a different font size in xfig. 
+This is done in seconds in the xfig GUI by highlighting only
+depths 41 and 42 and applying this change.
+
+## Scale of xfig drawings
+
+Line thicknesses in xfig are only integers.
+The canvas can be of arbitrary size and the exported .pdf
 
 ## Further useful features for game tree drawings
 
 The idea is that any xfig manipulation is only some final
 fine-tuning.
-What obviously cannot be done easily in xfig is 
+What obviously cannot be done easily in xfig is to change
+the relative *width* and *height* of tree levels.
+If that could be adjusted in the gte GUI it would help a lot
+to draw desired game trees. 
