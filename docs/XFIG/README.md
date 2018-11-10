@@ -9,7 +9,8 @@ It is mode-based and allows easy post-manipulation that
 would be clumsy to implement in GTE itself.
 
 Its text-based .fig format, documented in
-[`fig-format-2018`](./fig-format-2018)
+[`fig-format-2018`](./fig-format-2018) as 
+taken from http://mcj.sourceforge.net/fig-format.html,
 is compact, and allows reliable conversions to other formats
 such as .pdf or .svg with the `fig2dev` program.
 Hence, if exported to .fig, we get the other formats by a
