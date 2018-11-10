@@ -18,7 +18,7 @@ extra work.
 ## The example 
 
 The following example was generated with the old GTE program
-(stored in `xfig-example.xml`)
+(stored in `xfig-example.xml`), here a screenshot:
 
 ![](./screenshot.png)
 
@@ -35,9 +35,12 @@ point numbers are apparently harmless and either truncated
 or rounded when the file is read in by the xfig drawing
 program.
 
-Sample exports are to .jpg as here:
+Sample exports, directly from xfig, are to `xfig-example.jpg` as here:
 
 ![](./xfig-example.jpg)
+
+to `xfig-example.pdf`
+![](./xfig-example.pdf)
 
 and via 
 
