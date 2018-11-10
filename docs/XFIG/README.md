@@ -156,16 +156,11 @@ number** p which is a number from 0 to 4.
 **Type of element are** (in increasing depth, i.e. earlier
 ones are in the foreground), p = player number
 
-- 10 + p game tree *node* (box if chance player)
-
+- 10 + p game tree *node* (box if p=0, i.e. chance player)
 - 20 + p *information set*
-
 - 30 + p *move label*
-
 - 40 + p *player label*
-
 - 50 + p *payoff*
-
 - 60 + p *tree edge* which is the edge from the parent to
   the node, *where the parent determines* p.
   This is in case someone prefers to paint the tree edges in
@@ -184,5 +179,8 @@ are meant to get a different font size in xfig.
 I then highlight only depths 41 and 42 and apply this change
 in seconds in the xfig GUI.
 
+## Further useful features for game tree drawings
 
-
+The idea is that any xfig manipulation is only some final
+fine-tuning.
+What obviously cannot be done easily in xfig is 
