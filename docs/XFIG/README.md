@@ -91,26 +91,55 @@ file from GTE:
   every element has a unique level. This must be changed, as
   explained in the next section.
 
+- Text of move and player labels is slightly too close to
+  the lines / tree nodes.
+
 # Depth information for game tree elements
 
 In xfig, every object has a *depth*.
 For example, that depth is typically listed in 7th position
 in a graphics object, such as depth 984 in the "ArcBox"
-in 
-[`xfig-example.fig`](./xfig-example.fig)
-    
+in [`xfig-example.fig`](./xfig-example.fig) 
+
     2 4 0 3 4 4 984 -1 -1 0.000 0 0 43 0 0 5
         3535 5207 9634 5207 9634 6522 3535 6522 3535 5207
 
 which represents player 1's information set.
 If you view the file in xfig (recommended to understand
 what's going on), first type `ctrl-Z` to re-center the
-figure on the canvas, and choose the `Edit` mode on the
-left. The information that is shown for this object includes
-its depth:
+figure on the canvas, choose the `Edit` mode on the
+left, and click on the information set.
+The information that is shown for this object includes
+its depth (here 984):
 
 ![](./edit-in-xfig.png)
 
-It has two purposes:
+and this picture shows also that all texts are left-aligned.
+For a text field as in 
 
-- 
+    4 0 1 976 0 3 47 0.0000 4 570 390 14442 8012 b\001
+
+which shows the move label "b", the depth information (here
+depth 976) in the 4th position.
+
+The depth field has two purposes:
+
+- objects with lower depth are in the foreground, such as
+  game tree nodes, which have the player's colour, are in
+  front of the black lines.
+
+- **selecting objects** for changing many of them as the
+  same time.
+  For example, suppose I want to have the tree edges drawn
+  more thickly. In xfig this is done as follows:
+
+  * Select (tickboxes on the right) the required
+    tree elements (this is currently very difficult when
+    every tree element has its unique depth)
+    ![](./select-in-xfig.png)
+
+  * Group these into a single object, choose the `Update`
+    mode, select the new `Line Width`, and apply it to the
+    selected object: ![](./update-in-xfig.png)
+
+
