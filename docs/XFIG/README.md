@@ -73,13 +73,10 @@ file from GTE:
     [`xfig-example.svg`](xfig-example.svg), which for some
     reason uses smaller font sizes than those used for the
     .pdf file.
-
   * move labels that are written to the *left* of a line
     should be *right-adjusted* to keep their correct
     position when they are edited
-
   * the same should apply to player names *left* of a node
-
   * player names in the middle of an information set should
     be *centered* although they have usually enough space
     around them so this is not a big issue.
