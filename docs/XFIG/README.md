@@ -48,14 +48,37 @@ and via
 
     fig2dev -L svg xfig-example.fig xfig-example.svg
 
-to .svg as here:
+to `xfig-example.svg` as here:
 
 ![](./xfig-example.svg)
 
+## Current shortcomings of the xfig export
 
+Apart from the unnecessary white canvas background, there
+are two main shortcomings of the currently exported .fig
+file from GTE:
 
+- text alignment is currently always *left-adjusted*.
+  This causes a problem in the following instances:
 
+  * payoffs, which should be *right-adjusted*, are not aligned
+    after a font change (used fonts are hard to control)
+    as in the file `xfig-example.svg`.
 
+  * move labels that are written to the *left* of a line
+    should be *right-adjusted* to keep their correct
+    position when they are edited
 
+  * the same should apply to player names *left* of a node
+
+  * player names in the middle of an information set should
+    be *centered* although they have usually enough space
+    around them so this is not a big issue.
+
+- the crucial *depth* information of game tree elements
+  (such as nodes, lines, payoffs) is
+  currently just a consecutively numbered parameter where
+  every element has a unique level. This must be changed, as
+  explained in the next section.
 
 
