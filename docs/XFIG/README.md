@@ -24,19 +24,25 @@ The following example was generated with the old GTE program
 
 ![](./screenshot.png)
 
-and exported to xfig into `orig-xfig-example.fig`
+and exported to xfig into
+[`orig-xfig-example.fig`](./orig-xfig-example.fig) 
 and then manually post-processed in xfig by deleting the
-white canvas background, giving `xfig-example.fig`, in order
-to restrict the drawing to the tree alone without
+white canvas background, giving
+[`xfig-example.fig`](./xfig-example.fig),
+in order to restrict the drawing to the tree alone without
 unnecessary white margins.
 
 The difference between these two files
 [`orig-xfig-example.fig`](./orig-xfig-example.fig) and
 [`xfig-example.fig`](./xfig-example.fig) 
-shows that only integer coordinates are used, but floating
-point numbers are apparently harmless and either truncated
-or rounded when the file is read in by the xfig drawing
-program.
+shows that in the second file saved by the xfig program
+
+- only integer coordinates are used, but floating point
+  numbers are apparently harmless and either truncated or
+  rounded when the file is read in by the xfig drawing
+  program;
+
+- the objects are re-sorted by type rather than depth.
 
 Sample exports, directly from xfig, are to `xfig-example.jpg` as here:
 
@@ -63,7 +69,10 @@ file from GTE:
 
   * payoffs, which should be *right-adjusted*, are not aligned
     after a font change (used fonts are hard to control)
-    as in the file `xfig-example.svg`.
+    as in the file
+    [`xfig-example.svg`](xfig-example.svg), which for some
+    reason uses smaller font sizes than those used for the
+    .pdf file.
 
   * move labels that are written to the *left* of a line
     should be *right-adjusted* to keep their correct
@@ -77,8 +86,31 @@ file from GTE:
 
 - the crucial *depth* information of game tree elements
   (such as nodes, lines, payoffs) is
-  currently just a consecutively numbered parameter where
+  currently just a consecutively numbered parameter
+  (downwards, starting from 998 and counting down) where
   every element has a unique level. This must be changed, as
   explained in the next section.
 
+# Depth information for game tree elements
 
+In xfig, every object has a *depth*.
+For example, that depth is typically listed in 7th position
+in a graphics object, such as depth 984 in the "ArcBox"
+in 
+[`xfig-example.fig`](./xfig-example.fig)
+    
+    2 4 0 3 4 4 984 -1 -1 0.000 0 0 43 0 0 5
+        3535 5207 9634 5207 9634 6522 3535 6522 3535 5207
+
+which represents player 1's information set.
+If you view the file in xfig (recommended to understand
+what's going on), first type `ctrl-Z` to re-center the
+figure on the canvas, and choose the `Edit` mode on the
+left. The information that is shown for this object includes
+its depth:
+
+![](./edit-in-xfig.png)
+
+It has two purposes:
+
+- 
