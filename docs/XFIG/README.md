@@ -177,10 +177,31 @@ which are meant to get a different font size in xfig.
 This is done in seconds in the xfig GUI by highlighting only
 depths 41 and 42 and applying this change.
 
-## Scale of xfig drawings
+## Information sets and scale of xfig drawings 
+
+The drawing of information sets will be the most significant
+difference between gui and xfig drawing.
+
+xfig has **no transparency** parameter.
+
+Information sets should be drawn for the case that they are
+just horizontal rounded rectangles with *halfcircles at the
+end*, i.e. corner arc radius = 1/2 of info set height.
+
+**Postpone fancy drawing of non-horizontal or bended
+information sets**. These could be done by dotted lines
+directly connecting the nodes instead of info sets.
 
 Line thicknesses in xfig are only integers.
 The canvas can be of arbitrary size and the exported .pdf
+will always be scaled.
+So the canvas should be reasonably large so
+that the line thickness of information sets (which are the
+thinnest lines to be found), for example,
+can be changed between 2 and 3 and 4, say, for sufficient
+fine-tuning.
+Ordinary pixel sizes as used for the screen may be
+completely appropriate.
 
 ## Further useful features for game tree drawings
 
