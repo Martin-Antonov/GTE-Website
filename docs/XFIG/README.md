@@ -104,7 +104,7 @@ in [`xfig-example.fig`](./xfig-example.fig)
 
 which represents player 1's information set.
 If you view the file in xfig (recommended to understand
-what's going on), first type `ctrl-Z` to re-center the
+what's going on), first type `ctrl-z` to re-center the
 figure on the canvas, choose the `Edit` mode on the
 left, and click on the information set.
 The information that is shown for this object includes
@@ -118,15 +118,15 @@ For a text field as in
     4 0 1 976 0 3 47 0.0000 4 570 390 14442 8012 b\001
 
 which shows the move label "b", the depth information (here
-depth 976) in the 4th position.
+depth 976) is in the 4th position.
 
 The depth field has two purposes:
 
-- objects with lower depth are in the foreground, such as
-  game tree nodes, which have the player's colour, are in
-  front of the black lines.
+- objects with lower depth are in the foreground. For
+  example, game tree nodes, which have the player's colour,
+  are in front of the black lines.
 
-- **selecting objects** for changing many of them as the
+- **selecting objects** for changing many of them at the
   same time.
   For example, suppose I want to have the tree edges drawn
   more thickly. In xfig this is done as follows:
