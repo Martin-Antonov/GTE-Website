@@ -145,4 +145,44 @@ The depth field has two purposes:
 
     ![](./update-in-xfig.png)
 
+### New depth information to be stored
+
+In order to simplify the latter task (which may also involve
+changing player colors, fonts for move labels, etc.), we
+want a **separate depth** for each type of game tree element
+which has two components: **type of tree element** plus **player
+number** p which is a number from 0 to 4.
+
+**Type of element are** (in increasing depth, i.e. earlier
+ones are in the foreground), p = player number
+
+- 10 + p game tree *node* (box if chance player)
+
+- 20 + p *information set*
+
+- 30 + p *move label*
+
+- 40 + p *player label*
+
+- 50 + p *payoff*
+
+- 60 + p *tree edge* which is the edge from the parent to
+  the node, *where the parent determines* p.
+  This is in case someone prefers to paint the tree edges in
+  the colour of the player. If this is complicated p=0 for
+  black edges are fine.
+
+The numbers 10, 20, etc. should be constants that can be
+changed in case they don't come out right.
+Nodes and information sets (and move labels if the writing
+is too large) should be in front of tree lines but the rest
+is typically not overlapping and hence irrelevant.
+
+The point is that this allows quickly, via the depth, to
+identify *all* labels of player 1 and 2, for example, which
+are meant to get a different font size in xfig. 
+I then highlight only depths 41 and 42 and apply this change
+in seconds in the xfig GUI.
+
+
 
