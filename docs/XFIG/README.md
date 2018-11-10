@@ -135,11 +135,14 @@ The depth field has two purposes:
 
   * Select (tickboxes on the right) the required
     tree elements (this is currently very difficult when
-    every tree element has its unique depth)
+    every tree element has its unique depth):
+
     ![](./select-in-xfig.png)
 
   * Group these into a single object, choose the `Update`
     mode, select the new `Line Width`, and apply it to the
-    selected object: ![](./update-in-xfig.png)
+    group object:
+
+    ![](./update-in-xfig.png)
 
 
