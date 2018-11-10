@@ -31,7 +31,8 @@ to restrict the drawing to the tree alone without
 unnecessary white margins.
 
 The difference between these two files
-`orig-xfig-example.fig` and `xfig-example.fig`
+[`orig-xfig-example.fig`](./orig-xfig-example.fig) and
+[`xfig-example.fig`](./xfig-example.fig) 
 shows that only integer coordinates are used, but floating
 point numbers are apparently harmless and either truncated
 or rounded when the file is read in by the xfig drawing
