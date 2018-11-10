@@ -39,9 +39,8 @@ Sample exports, directly from xfig, are to `xfig-example.jpg` as here:
 
 ![](./xfig-example.jpg)
 
-to `xfig-example.pdf`
-![](./xfig-example.pdf)
-
+to 
+[`xfig-example.pdf`](./xfig-example.pdf) , 
 and via 
 
     fig2dev -L svg xfig-example.fig xfig-example.svg
