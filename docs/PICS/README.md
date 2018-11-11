@@ -1,7 +1,15 @@
-Note on .fig files:
-Done with the `xfig` program.
-Exported to .png format.
+# Notes on contents of PICS/
+
+.fig files have been generated with the `xfig` program.
+From there exported to .png format.
+
 Because picture sizes cannot easily be specified in .md,
 they are loaded in absolute size.
-The file `shrink` of `convert` commands produces the resized pictures,
+
+### [shrink](./shrink)
+
+Has a list of `convert` commands to produce the re-sized pictures
+for this specific file list,
 e.g. `2sf.png` converted to `2sf-.png`, which are used in the text.
+
+
