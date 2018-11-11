@@ -1,26 +1,26 @@
-##[ALGOS](./ALGOS)
+## [ALGOS](./ALGOS)
 
-##[a.md](./a.md)
+## [a.md](./a.md)
 
-##[Dissertation68123.pdf](./Dissertation68123.pdf)
+## [Dissertation68123.pdf](./Dissertation68123.pdf)
 
-##[fig-format](./fig-format)
+## [fig-format](./fig-format)
 
-##[general.md](./general.md)
+## [general.md](./general.md)
 
-##[k](./k)
+## [k](./k)
 
-##[movelabels.md](./movelabels.md)
+## [movelabels.md](./movelabels.md)
 
-##[multiplayer-strategicform.md](./multiplayer-strategicform.md)
+## [multiplayer-strategicform.md](./multiplayer-strategicform.md)
 
-##[PICS](./PICS)
+## [PICS](./PICS)
 
-##[RCS](./RCS)
+## [RCS](./RCS)
 
-##[reduced-strategies.md](./reduced-strategies.md)
+## [reduced-strategies.md](./reduced-strategies.md)
 
-##[url-markdown-cheatsheet](./url-markdown-cheatsheet)
+## [url-markdown-cheatsheet](./url-markdown-cheatsheet)
 
-##[XFIG](./XFIG)
+## [XFIG](./XFIG)
 
